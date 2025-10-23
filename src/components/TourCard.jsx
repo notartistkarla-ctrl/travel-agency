@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import "./TourCard.css";
 
 
-export default function TourCard(tours) {
-    const {id, image, title, category, destination, duration, description, price} = tours;
-
+export default function TourCard(tour) {
+    const {id, image, title, category, destination, duration, description, price} = tour;
     return(
         <div className="card">
             <img src={image} alt={title}/>

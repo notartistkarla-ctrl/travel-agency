@@ -1,4 +1,5 @@
 import React, { useMemo, useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { tours } from "../data/tours";
 import TourCard from "../components/TourCard";
 import "./Tours.css";
@@ -17,6 +18,30 @@ export default function Tours() {
   const [category, setCategory] = useState("Svi");
   const [destination, setDestination] = useState("Svi");
   const [sort, setSort] = useState("price-asc");
+
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  useEffect(() => {
+    const urlCat = searchParams.get("category");
+    const urlQuery = searchParams.get("query");
+    const urlDest = searchParams.get("destination");
+    const urlSort = searchParams.get("sort");
+
+    if (urlCat && urlCat !== "null") setCategory(decodeURIComponent(urlCat));
+    if (urlQuery && urlQuery !== "null") setQuery(decodeURIComponent(urlQuery));
+    if (urlDest && urlDest !== "null") setDestination(decodeURIComponent(urlDest));
+    if (urlSort && urlSort !== "null") setSort(decodeURIComponent(urlSort));
+  }, []);
+
+  useEffect(() => {
+    let params = {};
+    if (category) params.category = category;
+    if (query) params.query = query;
+    if (destination) params.destination = destination;
+    if (sort) params.sort = sort;
+
+    setSearchParams(params, { replace: true });
+  }, [query, category, destination, sort]);
 
   const filtered = useMemo(() => {
     let result = tours.filter(
