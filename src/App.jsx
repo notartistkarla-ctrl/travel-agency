@@ -8,11 +8,15 @@ import Categories from "./pages/Categories";
 import TourDetails from "./pages/TourDetails";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import Banner from "./components/Banner";
 
 export default function App(){
   return (
     <div className="app">
       <Header />
+      <Banner />
       <main className="main container">
         <Routes>
           <Route path="/" element={<Home />}/>
@@ -21,7 +25,8 @@ export default function App(){
           <Route path="/categories" element={<Categories />} />
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />
-          
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
