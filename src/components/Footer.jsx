@@ -11,7 +11,7 @@ export default function Footer() {
         <nav className="footer-nav">
           <NavLink
             to="/"
-            className={({ isActive }) => {
+            style={({ isActive }) => {
               isActive ? "active" : "";
             }}
           >
@@ -19,7 +19,7 @@ export default function Footer() {
           </NavLink>
           <NavLink
             to="/about"
-            className={({ isActive }) => {
+            style={({ isActive }) => {
               isActive ? "active" : "";
             }}
           >
@@ -27,7 +27,7 @@ export default function Footer() {
           </NavLink>
           <NavLink
             to="/faq"
-            className={({ isActive }) => {
+            style={({ isActive }) => {
               isActive ? "active" : "";
             }}
           >

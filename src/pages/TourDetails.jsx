@@ -6,17 +6,24 @@ export default function TourDetails() {
   const { id } = useParams();
   const tour = tours.filter((t) => t.id === Number(id))[0];
 
+  function formattedDates(dates) {
+    const [year, month, day] = dates.split("-".map(Number));
+    return (
+      `${String(day).padStart(2, "0")}.${String(month).padStart(2, "0")}.${year}.`
+    )
+  }
+
   if (!tour)
     return (
       <div className="container">
         <p>Izlet nije pronađen</p>
-        <Link to="/tours">Natrag na izlete</Link>
+        <Link to="/tours">Natrag</Link>
       </div>
     );
   return (
     <section className="tour-detail container">
       <Link to="/tours" className="btn">
-        {"Natrag na izlete."}
+        {"Natrag na izlete"}
       </Link>
       <h1>{tour.title}</h1>
       <img
@@ -34,7 +41,7 @@ export default function TourDetails() {
         <span className="pill">{tour.duration}</span>
       </p>
       <p>
-        <strong>Cijena: {tour.price}</strong>
+        <strong>Cijena: {tour.price} €</strong>
       </p>
       <p>{tour.longDescription}</p>
 
@@ -56,13 +63,13 @@ export default function TourDetails() {
             {tour.dates.map((d) => (
                 <tr key={d}>
                     <td>{d}</td>
-                    <td>{tour.price}</td>
+                    <td>{tour.price} €</td>
                 </tr>
             ))}
         </tbody>
       </table>
       <div style={{marginTop: 14}}>
-        <button type="button" className="btn" onClick={()=> alert("Hvala! Uskoro ćemo Vam se javiti.")}>
+        <button type="button" className="btn" style={{background: "#087f5b", fontSize: "22px", marginTop: "15px"}} onClick={()=> alert("Hvala! Uskoro ćemo Vam se javiti.")}>
             Prijavi se!
         </button>
       </div>

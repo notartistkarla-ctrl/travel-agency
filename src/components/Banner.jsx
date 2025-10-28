@@ -7,7 +7,7 @@ export default function Banner() {
 
     let title = "";
     switch(location.pathname) {
-        case "/": title="Naslovnica";
+        case "/": title="Otkrite svijet s nama";
         break;
         case "/about": title="O nama";
         break;

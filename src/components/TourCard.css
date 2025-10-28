@@ -14,4 +14,9 @@
     justify-content: space-between;
     margin-top: auto;
 }
+.card:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+    box-shadow: 5px 5px 5px var(--primary);
+}
 

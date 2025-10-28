@@ -4,6 +4,8 @@ import image2 from "../assets/hvar.jpg";
 import image3 from "../assets/paklenica.jpg";
 import image4 from "../assets/bali.jpg";
 import image5 from "../assets/rim.jpg";
+import image6 from "../assets/paris.jpg";
+import image7 from "../assets/madagaskar.jpg"
 
 export const tours = [
   {
@@ -17,7 +19,7 @@ export const tours = [
     price: 250,
     image: image1,
     imageLarge: image1,
-    dates: ["2025.06.01 – 2025.06.05", "2025.07.15 – 2025.07.20"]
+    dates: ["2025-06-01 – 2025-06-05", "2025-07-15 – 2025-07-20"]
   },
   {
     id: 2,
@@ -70,5 +72,31 @@ export const tours = [
     image: image5,
     imageLarge: image5,
     dates: ["2025-10-10 – 2025-10-13", "2025-12-05 – 2025-12-08"]
+  },
+  {
+    id: 6,
+    title: "City Tour Paris",
+    category: "City tours",
+    destination: "Paris",
+    duration: "5 dana",
+    description: "Povijesne znamenitosti i gastronomski doživljaji.",
+    longDescription: "Penjanje na toranj Eiffel, šetnja uz Arc de Triomphe te uživanje u Crème brûlée.",
+    price: 660,
+    image: image6,
+    imageLarge: image6,
+    dates: ["2025-11-15 – 2025-11-20"]
+  },
+  {
+    id: 7,
+    title: "Exotic Madagaskar",
+    category: "Exotic",
+    destination: "Madagaskar",
+    duration: "10 dana",
+    description: "Egzotična avantura uzbudljivog Madagaskara uz lokalne vodiče.",
+    longDescription: "Divne plaže i nacionalni parkova krase otok prepun egzotične flore i faune što ga čini odličnim za obiteljsko putovanje.",
+    price: 2200,
+    image: image7,
+    imageLarge: image7,
+    dates: ["2026-02-01 – 2026-02-10", "2026-04-12 – 2026-04-22"]
   }
 ];

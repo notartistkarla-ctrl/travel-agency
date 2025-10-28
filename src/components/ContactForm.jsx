@@ -156,7 +156,7 @@ export default function ContactForm() {
         </label>
         {errors.consent && <small className="error">{errors.consent}</small>}
       </div>
-      <button type="submit" className="btn">
+      <button type="submit" className="btn" style={{marginTop: "22px"}}>
         Pošalji
       </button>
     </form>

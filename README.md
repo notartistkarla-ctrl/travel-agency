@@ -1,2 +1,6 @@
 # travel-agency
-Završni rad Karle Kralj za stjecanje djelomične kvalifikacije Front-end developerke u Pučkom otvorenom učilištu Petar Zrinski pod Mentorstvom Marka Miletića.
+Final project of Karla Kralj for Frontend developer qualification at Pučko otvoreno učilište Petar Zrinki under mentorship of Marko Miletić.
+
+This site contains pages about the agency and global tours they have in the offers.
+
+To access the working files, you'll nee

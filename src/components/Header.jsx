@@ -22,7 +22,7 @@ export default function Header() {
         <nav className={`nav ${open ? "open" : ""}`}>
           <NavLink
             to="/"
-            className={({ isActive }) => {
+            style={({ isActive }) => {
               isActive ? "active" : "";
             }}
           >
@@ -30,7 +30,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/about"
-            className={({ isActive }) => {
+            style={({ isActive }) => {
               isActive ? "active" : "";
             }}
           >
@@ -38,7 +38,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/categories"
-            className={({ isActive }) => {
+            style={({ isActive }) => {
               isActive ? "active" : "";
             }}
           >
@@ -46,7 +46,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/tours"
-            className={({ isActive }) => {
+            style={({ isActive }) => {
               isActive ? "active" : "";
             }}
           >
@@ -54,7 +54,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/contact"
-            className={({ isActive }) => {
+            style={({ isActive }) => {
               isActive ? "active" : "";
             }}
           >
@@ -62,7 +62,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/faq"
-            className={({ isActive }) => {
+            style={({ isActive }) => {
               isActive ? "active" : "";
             }}
           >
