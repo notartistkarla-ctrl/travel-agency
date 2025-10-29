@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { tours } from "../data/tours";
 import "../components/TourCard.css";
-import { width } from "@fortawesome/free-brands-svg-icons/fa11ty";
 
 export default function Categories()  {
     const categories = [... new Set(tours.map((t) => t.category))];

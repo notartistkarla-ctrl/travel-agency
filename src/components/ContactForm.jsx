@@ -29,21 +29,21 @@ export default function ContactForm() {
       delete e.name;
     }
     if (!data.email) {e.email = "Unesite email"} else {
-      delete e.name;
+      delete e.email;
     }
-    if (data.email && !data.email.includes("@") && !data.email.includes("."))
+    if (data.email && !data.email.includes("@") || !data.email.includes("."))
       {e.email = "Email format nije ispravan"} else {
-      delete e.name;
+      delete e.email;
     }
-    if (!data.topic) {e.topic = "Unesite temu"} else {
-      delete e.name;
+    if (!data.topic) {e.topic = "Odaberite temu"} else {
+      delete e.topic;
     }
-    if (!data.message && data.message.trim().length < 10)
+    if (!data.message || data.message.trim().length < 10)
       {e.message = "Poruka mora imati najmanje 10 znakova"} else {
-      delete e.name;
+      delete e.message;
     }
     if (!data.consent) {e.consent = "Potvrdite privolu"} else {
-      delete e.name;
+      delete e.consent;
     }
     setErrors(e);
 
@@ -85,7 +85,7 @@ export default function ContactForm() {
         {errors.name && <small className="error">{errors.name}</small>}
       </div>
       <div className="field">
-        <label htmlFor="name">Email</label>
+        <label htmlFor="email">Email</label>
         <input
           type="text"
           name="email"
@@ -99,7 +99,7 @@ export default function ContactForm() {
         {errors.email && <small className="error">{errors.email}</small>}
       </div>
       <div className="field">
-        <label htmlFor="name">Mobitel (opcionalan)</label>
+        <label htmlFor="phone">Mobitel (opcionalan)</label>
         <input
           type="text"
           name="phone"
@@ -156,7 +156,7 @@ export default function ContactForm() {
         </label>
         {errors.consent && <small className="error">{errors.consent}</small>}
       </div>
-      <button type="submit" className="btn" style={{marginTop: "22px"}}>
+      <button type="submit" className="btn contact-btn">
         Pošalji
       </button>
     </form>

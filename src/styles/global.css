@@ -8,6 +8,7 @@
   --card: #ffffff;
   --border: #e5e7eb;
   --shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  --error: #ff0000;
 }
 * {
   box-sizing: border-box;
@@ -99,32 +100,6 @@ thead {
   font-weight: 700;
   color: var(--accent);
 }
-
-/*Style for Home page*/
-.icon-box {
-  width: 100%;
-  text-align: justify;
-  padding: 15px;
-
+.not-found {
+  text-align: center;
 }
-.icon-border {
-  border-left: 2px solid var(--primary-900);
-  border-right: 2px solid var(--primary-900);
-}
-.icon {
-  transform: scale(5.0);
-  padding: 50px;
-}
-
-/*Style for About page*/
-.team {
-  text-align: left;
-}
-.team img{
-  width: 200px;
-  border-radius: 20px;
-}
-.team p {
-  font-style: italic;
-}
-

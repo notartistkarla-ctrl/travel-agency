@@ -1,0 +1,12 @@
+img {
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+table {
+  max-width: 612px;
+}
+.special-btn {
+  font-size: 20px; 
+  margin-top: 15px;
+  max-width: 150px;
+}

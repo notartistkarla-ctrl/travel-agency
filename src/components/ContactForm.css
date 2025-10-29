@@ -2,11 +2,13 @@
     display: gird;
     gap: 12px;
     max-width: 520px;
+    color: var(--text);
 }
 .field {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    width: 65%;
 }
 label {
     font-weight: bold;
@@ -15,14 +17,25 @@ input, select, textarea, input:not([type="checkbox"]) {
     padding: 10px;
     border: 1px solid var(--border);
     border-radius: 8px;
-    background-color: #fff;
+    background-color: var(--card);
 }
 textarea {
     min-height: 140px;
 }
 .error {
-    color: red;
+    color: var(--error);
 }
 input.field-error, select.field-error, textarea.field-error{
-    border-color: red;
+    border-color: var(--error);
+}
+.contact-btn {
+    margin-top: 22px;
+    width: 65%;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .special-btn, .field {
+        width: 100%;
+    }
 }

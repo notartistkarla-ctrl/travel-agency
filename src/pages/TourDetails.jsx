@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { tours } from "../data/tours";
+import "./TourDetails.css";
 
 export default function TourDetails() {
   const { id } = useParams();
@@ -8,9 +9,10 @@ export default function TourDetails() {
 
   function formattedDates(dates) {
     const [year, month, day] = dates.split("-".map(Number));
-    return (
-      `${String(day).padStart(2, "0")}.${String(month).padStart(2, "0")}.${year}.`
-    )
+    return `${String(day).padStart(2, "0")}.${String(month).padStart(
+      2,
+      "0"
+    )}.${year}.`;
   }
 
   if (!tour)
@@ -29,11 +31,6 @@ export default function TourDetails() {
       <img
         src={tour.image}
         alt={tour.title}
-        style={{
-          borderRadius: 10,
-          boxShadow: "var(--shadow)",
-          margin: "12px 0",
-        }}
       />
       <p className="muted">
         <span className="pill">{tour.category}</span>
@@ -54,23 +51,27 @@ export default function TourDetails() {
       <h2>Termini</h2>
       <table>
         <thead>
-            <tr>
-                <th>Datum početka</th>
-                <th>Cijena</th>
-            </tr>
+          <tr>
+            <th>Datum početka</th>
+            <th>Cijena</th>
+          </tr>
         </thead>
         <tbody>
-            {tour.dates.map((d) => (
-                <tr key={d}>
-                    <td>{d}</td>
-                    <td>{tour.price} €</td>
-                </tr>
-            ))}
+          {tour.dates.map((d) => (
+            <tr key={d}>
+              <td>{d}</td>
+              <td>{tour.price} €</td>
+            </tr>
+          ))}
         </tbody>
       </table>
-      <div style={{marginTop: 14}}>
-        <button type="button" className="btn" style={{background: "#087f5b", fontSize: "22px", marginTop: "15px"}} onClick={()=> alert("Hvala! Uskoro ćemo Vam se javiti.")}>
-            Prijavi se!
+      <div style={{ marginTop: 14 }}>
+        <button
+          type="button"
+          className="btn special-btn"
+          onClick={() => alert("Hvala! Uskoro ćemo Vam se javiti.")}
+        >
+          Rezerviraj!
         </button>
       </div>
     </section>

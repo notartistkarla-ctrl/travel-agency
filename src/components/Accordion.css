@@ -23,4 +23,5 @@
     padding: 12px 14px;
     background: #fff;
     font-size: small;
+    color: var(--text);
 }

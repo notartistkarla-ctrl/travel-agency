@@ -1,11 +1,11 @@
 
-import image1 from "../assets/velebit.jpg";
-import image2 from "../assets/hvar.jpg";
-import image3 from "../assets/paklenica.jpg";
-import image4 from "../assets/bali.jpg";
-import image5 from "../assets/rim.jpg";
-import image6 from "../assets/paris.jpg";
-import image7 from "../assets/madagaskar.jpg"
+import image1 from "../assets/destinations/velebit.jpg";
+import image2 from "../assets/destinations/hvar.jpg";
+import image3 from "../assets/destinations/paklenica.jpg";
+import image4 from "../assets/destinations/bali.jpg";
+import image5 from "../assets/destinations/rim.jpg";
+import image6 from "../assets/destinations/paris.jpg";
+import image7 from "../assets/destinations/madagaskar.jpg"
 
 export const tours = [
   {
@@ -19,7 +19,7 @@ export const tours = [
     price: 250,
     image: image1,
     imageLarge: image1,
-    dates: ["2025-06-01 – 2025-06-05", "2025-07-15 – 2025-07-20"]
+    dates: ["01.06.2026. – 05.06.2026.", "15.07.2026. – 20.07.2026."]
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export const tours = [
     price: 400,
     image: image2,
     imageLarge: image2,
-    dates: ["2025-06-10 – 2025-06-12", "2025-08-02 – 2025-08-04"]
+    dates: ["10.06.2026. – 12.06.2026.", "02.08.2026. – 04.08.2026."]
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export const tours = [
     price: 180,
     image: image3,
     imageLarge: image3,
-    dates: ["2025-09-05 – 2025-09-06", "2025-09-19 – 2025-09-20"]
+    dates: ["05.09.2026. – 06.09.2026.", "19.09.2026. – 20.09.2026."]
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const tours = [
     price: 1200,
     image: image4,
     imageLarge: image4,
-    dates: ["2025-11-01 – 2025-11-07"]
+    dates: ["01.11.2026. – 07.11.2026."]
   },
   {
     id: 5,
@@ -71,7 +71,7 @@ export const tours = [
     price: 550,
     image: image5,
     imageLarge: image5,
-    dates: ["2025-10-10 – 2025-10-13", "2025-12-05 – 2025-12-08"]
+    dates: ["10.10.2026. – 13.10.2026.", "05.12.2026. – 08.12.2026."]
   },
   {
     id: 6,
@@ -84,7 +84,7 @@ export const tours = [
     price: 660,
     image: image6,
     imageLarge: image6,
-    dates: ["2025-11-15 – 2025-11-20"]
+    dates: ["15.11.2025. – 19.11.2025."]
   },
   {
     id: 7,
@@ -97,6 +97,6 @@ export const tours = [
     price: 2200,
     image: image7,
     imageLarge: image7,
-    dates: ["2026-02-01 – 2026-02-10", "2026-04-12 – 2026-04-22"]
+    dates: ["02.02.2026. – 10.02.2026.", "12.04.2026. – 21.04.2026."]
   }
 ];

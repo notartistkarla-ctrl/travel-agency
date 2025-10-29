@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     background-color: var(--primary);
-    color: #fff;
+    color: var(--card);
     z-index: 100;
     box-shadow: var(--shadow);
 }
@@ -39,7 +39,7 @@
 .menu-btn {
     background-color: var(--primary);
     border: none;
-    color: #fff;
+    color: var(--card);
     font-size: 22px;
     cursor: pointer;
     display: none;

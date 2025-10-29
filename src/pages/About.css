@@ -1,0 +1,14 @@
+.team {
+  text-align: left;
+}
+.team img{
+  width: 200px;
+  border-radius: 20px;
+}
+.team p {
+  font-style: italic;
+  color: var(--primary-900);
+}
+.team p, h4 {
+  line-height: 1px;
+}

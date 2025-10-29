@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TourCard from "../components/TourCard";
 import { tours } from "../data/tours";
+import "./Home.css";
 
 export default function Home() {
   const featured = [...tours].slice(0, 3);
@@ -24,7 +25,7 @@ export default function Home() {
         <h2>Izdvojeni izleti</h2>
         <div className="grid">
           {featured.map((t) => (
-            <TourCard key={t.id} tour={t} />
+            <TourCard key={t.id} {...t} />
           ))}
         </div>
       </div>

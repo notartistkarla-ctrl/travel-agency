@@ -1,0 +1,15 @@
+.box {
+  width: 65%;
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.box p {
+  text-decoration: underline var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}

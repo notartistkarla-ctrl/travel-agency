@@ -1,10 +1,11 @@
 import React from "react";
-import founder from "../assets/founder.jpg";
-import director from "../assets/director.jpg";
-import manager from "../assets/manager.jpg";
-import agent1 from "../assets/agent1.jpg";
-import agent2 from "../assets/agent2.jpg";
-import agent3 from "../assets/agent3.jpg";
+import founder from "../assets/team/founder.jpg";
+import director from "../assets/team/director.jpg";
+import manager from "../assets/team/manager.jpg";
+import agent1 from "../assets/team/agent1.jpg";
+import agent2 from "../assets/team/agent2.jpg";
+import agent3 from "../assets/team/agent3.jpg";
+import "./About.css";
 
 export default function About() {
   return (

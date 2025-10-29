@@ -1,0 +1,14 @@
+.icon-box {
+  width: 100%;
+  text-align: justify;
+  padding: 15px;
+
+}
+.icon-border {
+  border-left: 2px solid var(--primary-900);
+  border-right: 2px solid var(--primary-900);
+}
+.icon {
+  transform: scale(5.0);
+  padding: 50px;
+}

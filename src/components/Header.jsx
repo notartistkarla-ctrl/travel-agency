@@ -1,10 +1,16 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+  }
+  const closeMenu = () => {
+    setOpen(false);
+  }
 
   return (
     <header className="header">
@@ -14,14 +20,15 @@ export default function Header() {
         <button
           type="button"
           className="menu-btn"
-          onClick={() => setOpen(!open)}
-        >
+          onClick={toggleMenu}
+        > 
           <i className="fa-solid fa-bars"></i>
         </button>
 
-        <nav className={`nav ${open ? "open" : ""}`}>
+        <nav className={`nav ${open ? "open" : "closed"}`}>
           <NavLink
             to="/"
+            onClick={closeMenu}
             style={({ isActive }) => {
               isActive ? "active" : "";
             }}
@@ -30,6 +37,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/about"
+            onClick={closeMenu}
             style={({ isActive }) => {
               isActive ? "active" : "";
             }}
@@ -38,6 +46,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/categories"
+            onClick={closeMenu}
             style={({ isActive }) => {
               isActive ? "active" : "";
             }}
@@ -46,6 +55,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/tours"
+            onClick={closeMenu}
             style={({ isActive }) => {
               isActive ? "active" : "";
             }}
@@ -54,6 +64,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/contact"
+            onClick={closeMenu}
             style={({ isActive }) => {
               isActive ? "active" : "";
             }}
@@ -62,6 +73,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/faq"
+            onClick={closeMenu}
             style={({ isActive }) => {
               isActive ? "active" : "";
             }}
