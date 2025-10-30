@@ -20,8 +20,17 @@
 }
 
 .banner-text {
-    font-size: 48px;
+    font-size: 4vw;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 250px;
+    }
+    .banner-text {
+        font-size: 8vw;
+    }
 }

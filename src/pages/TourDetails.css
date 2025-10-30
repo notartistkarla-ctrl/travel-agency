@@ -1,3 +1,9 @@
+.back-btn {
+  color: var(--primary);
+}
+.title {
+  margin-top: 20px;
+}
 img {
   border-radius: 10px;
   box-shadow: var(--shadow);
@@ -5,8 +11,19 @@ img {
 table {
   max-width: 612px;
 }
-.special-btn {
-  font-size: 20px; 
+.tour-detail {
+  position: relative;
+}
+.sticky-btn {
+  position: sticky;
+  bottom: 50px;
+  font-size: 20px;
+  width: 150px;
   margin-top: 15px;
-  max-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-btn {
+    width: 100%;
+  }
 }

@@ -35,7 +35,7 @@ input.field-error, select.field-error, textarea.field-error{
 }
 
 @media screen and (max-width: 768px) {
-    .special-btn, .field {
+    .contact-btn, .field {
         width: 100%;
     }
 }

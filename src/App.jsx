@@ -11,10 +11,14 @@ import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Banner from "./components/Banner";
+import { Helmet } from "react-helmet";
 
 export default function App(){
   return (
     <div className="app">
+      <Helmet>
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+      </Helmet>
       <Header />
       <Banner />
       <main className="main container">

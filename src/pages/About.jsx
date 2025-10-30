@@ -10,7 +10,7 @@ import "./About.css";
 export default function About() {
   return (
     <section className="about container">
-      <h1>O nama</h1>
+      <h2>O agenciji</h2>
       <p>
         Travel Agency od 2005. organizira izlete i putovanja diljem svijeta.
         Naša misija je pružiti sigurna i nezaboravna putovanja prilagođena

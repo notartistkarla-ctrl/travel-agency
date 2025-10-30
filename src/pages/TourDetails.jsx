@@ -7,14 +7,6 @@ export default function TourDetails() {
   const { id } = useParams();
   const tour = tours.filter((t) => t.id === Number(id))[0];
 
-  function formattedDates(dates) {
-    const [year, month, day] = dates.split("-".map(Number));
-    return `${String(day).padStart(2, "0")}.${String(month).padStart(
-      2,
-      "0"
-    )}.${year}.`;
-  }
-
   if (!tour)
     return (
       <div className="container">
@@ -24,10 +16,10 @@ export default function TourDetails() {
     );
   return (
     <section className="tour-detail container">
-      <Link to="/tours" className="btn">
+      <Link to="/tours" className="back-btn">
         {"Natrag na izlete"}
       </Link>
-      <h1>{tour.title}</h1>
+      <h1 className="title">{tour.title}</h1>
       <img
         src={tour.image}
         alt={tour.title}
@@ -65,15 +57,13 @@ export default function TourDetails() {
           ))}
         </tbody>
       </table>
-      <div style={{ marginTop: 14 }}>
         <button
           type="button"
-          className="btn special-btn"
+          className="btn sticky-btn"
           onClick={() => alert("Hvala! Uskoro ćemo Vam se javiti.")}
         >
           Rezerviraj!
         </button>
-      </div>
     </section>
   );
 }
