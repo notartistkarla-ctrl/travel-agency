@@ -1,4 +1,4 @@
-I am developing a capstone project in React to complete my university program for a frontend developer at Pučko otvoreno učilište Petar Zrinki under mentorship of Marko Miletić.
+I've developed a capstone project in React to complete my university program for a frontend developer at Pučko otvoreno učilište Petar Zrinki under mentorship of Marko Miletić.
 
 # description
 This site contains pages about a travel agency including:
@@ -21,9 +21,9 @@ I use:
 
 # installing
 To access the project, you'll need to install NPM - in terminal run the following commands: 
-npm i
-npm run dev
-npm run build
+- npm i
+- npm run dev
+- npm run build
 
 # files and folders
 Upon installing the project will include:
@@ -49,7 +49,7 @@ Upon installing the project will include:
     - Header.jsx
     - Header.css
     - TourCard.jsx
-    - Tourcsrd.css
+    - TourCard.css
 - data forlder contains tours.js with information about the tours
 - pages folder contains:
     - About.jsx
@@ -68,7 +68,7 @@ Upon installing the project will include:
 - styles folder contains only global.css
 
 # bugs
-The number one problem I could not find a solution to is favicon. I've tried writing <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> in index.html, installed React Helmet, erased all code and files related to React's default icon, empties my browsers cache each time, disabled cache, ended and started my project after every try asked ChatGPT, Copilot Search, StackOverflow, W3Schools, NPM, YouTube tutorials and it's still not working.
+The number one problem I could not find a solution to is favicon. I've tried writing in index.html, installed React Helmet, erased all code and files related to React's default icon, empties my browsers cache each time, disabled cache, ended and started my project after every try, asked ChatGPT, Copilot Search, StackOverflow, W3Schools, NPM, YouTube tutorials and couldn't figure out what I'm missing.
 
 
 
